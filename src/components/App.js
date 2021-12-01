@@ -1,9 +1,11 @@
-import './App.css';
+import Carousel from "./Carousel";
+import Navbar from "./Navbar";
 
 function App() {
   return (
     <div className="App">
-      <h1>TESTE</h1>
+      <Navbar />
+      <Carousel />
     </div>
   );
 }
