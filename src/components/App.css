@@ -1,3 +1,13 @@
 body {
   font-family: "Play", sans-serif;
+  margin: 0 1%;
+}
+
+.carousel-title {
+  text-shadow: 0 0 5px rgb(0, 0, 0);
+  color: rgb(248, 142, 2);
+}
+
+.carousel-subtitle {
+  text-shadow: 0 0 5px rgb(0, 0, 0);
 }
