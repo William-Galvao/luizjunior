@@ -1,13 +1,11 @@
 import Navbar from "./Navbar";
-import Perfil from "./Perfil";
-import HeroCard from "./HeroCard";
+import Home from "../Pages/Home";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <HeroCard />
-      <Perfil />
+      <Home />
     </div>
   );
 }
