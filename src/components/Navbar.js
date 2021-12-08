@@ -37,7 +37,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="nav-item" style={{ marginLeft: "100px" }}>
-              <Link className="nav-link" to="">
+              <Link className="nav-link" to="/evolutiontrackerlogin">
                 Evolution Tracker
               </Link>
             </li>

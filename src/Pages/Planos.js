@@ -1,4 +1,5 @@
 import iniciante from "../assets/iniciante.jpg";
+import extreme from "../assets/extreme.jpg";
 
 export default function Planos() {
   return (
@@ -18,6 +19,7 @@ export default function Planos() {
               src={iniciante}
               className="card-img-top p-2"
               alt="Aluna se alongando"
+              style={{ objectFit: "cover", height: "350px" }}
             />
             <div className="card-body">
               <h5 className="card-title">Iniciante</h5>
@@ -42,6 +44,7 @@ export default function Planos() {
               src={iniciante}
               className="card-img-top p-2"
               alt="Aluna se alongando"
+              style={{ objectFit: "cover", height: "350px" }}
             />
             <div className="card-body">
               <h5 className="card-title">Co-op</h5>
@@ -61,9 +64,10 @@ export default function Planos() {
         <div className="col-4">
           <div className="card text-white bg-danger mb-3">
             <img
-              src={iniciante}
+              src={extreme}
               className="card-img-top p-2"
               alt="Aluna se alongando"
+              style={{ objectFit: "cover", height: "350px" }}
             />
             <div className="card-body">
               <h5 className="card-title">Extreme</h5>
