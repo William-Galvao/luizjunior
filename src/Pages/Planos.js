@@ -1,6 +1,6 @@
 import iniciante from "../assets/iniciante.jpg";
 
-export default function Planos(props) {
+export default function Planos() {
   return (
     <div>
       <div className="m-5 p-5">
