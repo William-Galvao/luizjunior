@@ -1,5 +1,7 @@
 import iniciante from "../assets/iniciante.jpg";
+import coop from "../assets/coop.jpg";
 import extreme from "../assets/extreme.jpg";
+import PriceCard from "../components/PriceCard";
 
 export default function Planos() {
   return (
@@ -13,78 +15,51 @@ export default function Planos() {
         </h3>
       </div>
       <div className="row m-1">
-        <div className="col-4">
-          <div className="card text-dark bg-info mb-3">
-            <img
-              src={iniciante}
-              className="card-img-top p-2"
-              alt="Aluna se alongando"
-              style={{ objectFit: "cover", height: "350px" }}
-            />
-            <div className="card-body">
-              <h5 className="card-title">Iniciante</h5>
-              <p className="card-text">
-                Ideal para quem está começando a se exercitar
-              </p>
-            </div>
-            <ul className="list-group list-group-flush">
-              <li className="list-group-item">2x/semana</li>
-              <li className="list-group-item">
-                Em qualquer lugar da sua preferência
-              </li>
-              <li className="list-group-item">
-                Acesso completo ao Evolution Tracker
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="col-4">
-          <div className="card text-white bg-success mb-3">
-            <img
-              src={iniciante}
-              className="card-img-top p-2"
-              alt="Aluna se alongando"
-              style={{ objectFit: "cover", height: "350px" }}
-            />
-            <div className="card-body">
-              <h5 className="card-title">Co-op</h5>
-              <p className="card-text">Para até duas pessoas</p>
-            </div>
-            <ul className="list-group list-group-flush">
-              <li className="list-group-item">2x/semana</li>
-              <li className="list-group-item">
-                Em qualquer lugar da sua preferência
-              </li>
-              <li className="list-group-item">
-                Acesso completo ao Evolution Tracker
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="col-4">
-          <div className="card text-white bg-danger mb-3">
-            <img
-              src={extreme}
-              className="card-img-top p-2"
-              alt="Aluna se alongando"
-              style={{ objectFit: "cover", height: "350px" }}
-            />
-            <div className="card-body">
-              <h5 className="card-title">Extreme</h5>
-              <p className="card-text">Treino de alta intensidade</p>
-            </div>
-            <ul className="list-group list-group-flush">
-              <li className="list-group-item">3x/semana</li>
-              <li className="list-group-item">
-                Nas melhores academias da cidade
-              </li>
-              <li className="list-group-item">
-                Acesso completo ao Evolution Tracker
-              </li>
-              <li className="list-group-item">Acompanhamento nutricional</li>
-            </ul>
-          </div>
-        </div>
+        <PriceCard
+          textcolor="dark"
+          backgroundcolor="light"
+          image={iniciante}
+          alt="iniciante"
+          title="Iniciante"
+          subtitle="Lorem ipsum dolor sit."
+          lines={[
+            "Duis ipsum massa, bibendum non diam.",
+            "Pellentesque placerat erat eget lacus pulvinar.",
+            "Etiam sit amet sagittis nunc. Sed.",
+          ]}
+        />
+        <PriceCard
+          textcolor="white"
+          backgroundcolor="secondary"
+          image={coop}
+          alt="co-op"
+          title="Co-op"
+          subtitle="Curabitur convallis auctor enim."
+          lines={[
+            "Duis ipsum massa, bibendum non diam.",
+            "Pellentesque placerat erat eget lacus pulvinar",
+            "Etiam sit amet sagittis nunc. Sed.",
+            "Aenean facilisis metus et turpis dictum.",
+            "Donec velit purus, molestie ornare pulvinar.",
+          ]}
+        />
+        <PriceCard
+          textcolor="white"
+          backgroundcolor="dark"
+          image={extreme}
+          alt="extreme"
+          title="Extreme"
+          subtitle="Nulla tristique, eros non."
+          lines={[
+            "Duis ipsum massa, bibendum non diam.",
+            "Pellentesque placerat erat eget lacus pulvinar",
+            "Etiam sit amet sagittis nunc. Sed.",
+            "Aenean facilisis metus et turpis dictum.",
+            "Donec velit purus, molestie ornare pulvinar.",
+            "Vivamus orci metus, imperdiet at pulvinar.",
+            "Nam posuere molestie odio, nec dictum.",
+          ]}
+        />
       </div>
     </div>
   );
