@@ -2,7 +2,7 @@ export default function PriceCard(props) {
   return (
     <div className="col-4">
       <div
-        className={`card text-${props.textcolor} bg-${props.backgroundcolor} mb-3 border-0`}
+        className={`card text-${props.textcolor} bg-${props.backgroundcolor} mb-3 border-0 shadow-lg zoom`}
       >
         <img
           src={props.image}
@@ -18,8 +18,10 @@ export default function PriceCard(props) {
           <h4 className="card-text">{props.subtitle}</h4>
         </div>
         <ul className="list-group list-group-flush">
-          {props.lines.map((currentLine) => (
-            <li className="list-group-item">{currentLine}</li>
+          {props.lines.map((currentLine, i) => (
+            <li key={i} className="list-group-item">
+              {currentLine}
+            </li>
           ))}
         </ul>
       </div>
