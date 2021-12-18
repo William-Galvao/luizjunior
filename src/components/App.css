@@ -1,8 +1,17 @@
 body {
   font-family: "Play", sans-serif;
   margin: 0 1%;
+  font-size: 20px;
 }
 
 h1 {
-  text-shadow: 2px 2px #080808;
+  text-shadow: 1px 1px #080808;
+}
+
+.zoom {
+  transition: transform 0.2s;
+}
+
+.zoom:hover {
+  transform: scale(1.05);
 }
