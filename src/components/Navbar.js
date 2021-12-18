@@ -20,23 +20,23 @@ export default function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item" style={{ marginLeft: "100px" }}>
+          <ul className="navbar-nav w-100 d-flex justify-content-around">
+            <li className="nav-item">
               <Link className="nav-link" to="/">
                 Home
               </Link>
             </li>
-            <li className="nav-item" style={{ marginLeft: "100px" }}>
+            <li className="nav-item">
               <Link className="nav-link" to="/planos">
                 Planos
               </Link>
             </li>
-            <li className="nav-item" style={{ marginLeft: "100px" }}>
+            <li className="nav-item">
               <Link className="nav-link" to="/galeria">
                 Galeria
               </Link>
             </li>
-            <li className="nav-item" style={{ marginLeft: "100px" }}>
+            <li className="nav-item">
               <Link className="nav-link" to="/evolutiontrackerlogin">
                 Evolution Tracker
               </Link>
