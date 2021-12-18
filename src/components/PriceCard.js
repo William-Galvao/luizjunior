@@ -1,6 +1,6 @@
 export default function PriceCard(props) {
   return (
-    <div className="col-4">
+    <div className="col-md-4">
       <div
         className={`card text-${props.textcolor} bg-${props.backgroundcolor} mb-3 border-0 shadow-lg zoom`}
       >
