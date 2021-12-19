@@ -1,16 +1,20 @@
 import googleIcon from "../assets/google-icon.svg";
-import { auth, firebase } from "../services/firebase";
+
 import { useNavigate } from "react-router-dom";
 import EvolutionTrackerLogo from "../components/EvolutionTrackerLogo";
+import { useContext } from "react";
+import { AuthContext } from "../components/AuthContext";
 
 export default function EvolutionTrackerLogIn() {
   const navigate = useNavigate();
-  function signIn() {
-    const provider = new firebase.auth.GoogleAuthProvider();
-    auth.signInWithPopup(provider).then((response) => {
-      console.log(response.user);
-      navigate("/");
-    });
+
+  const { user, signInWithGoogle } = useContext(AuthContext);
+
+  function handleNavigateToEvo() {
+    if (!user) {
+      signInWithGoogle();
+    }
+    navigate("/evolutiontracker");
   }
 
   return (
@@ -20,7 +24,7 @@ export default function EvolutionTrackerLogIn() {
     >
       <EvolutionTrackerLogo />
       <button
-        onClick={signIn}
+        onClick={handleNavigateToEvo}
         type="button"
         className="btn btn-danger btn-lg d-flex justify-content-center align-items-center m-2"
       >
