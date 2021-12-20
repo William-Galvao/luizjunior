@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useAuth } from "../hooks/useAuth";
 
 export default function Navbar() {
-  const { user } = useAuth;
+  const { user } = useAuth();
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white">

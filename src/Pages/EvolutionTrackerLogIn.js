@@ -5,7 +5,7 @@ import { useAuth } from "../hooks/useAuth";
 
 export default function EvolutionTrackerLogIn() {
   const navigate = useNavigate();
-  const { user, signInWithGoogle } = useAuth;
+  const { user, signInWithGoogle } = useAuth();
 
   async function handleNavigateToEvo() {
     if (!user) {
