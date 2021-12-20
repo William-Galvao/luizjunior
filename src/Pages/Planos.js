@@ -1,6 +1,6 @@
-import iniciante from "../assets/iniciante.jpg";
-import coop from "../assets/coop.jpg";
-import extreme from "../assets/extreme.jpg";
+import iniciante from "../assets/images/iniciante.jpg";
+import coop from "../assets/images/coop.jpg";
+import extreme from "../assets/images/extreme.jpg";
 import PriceCard from "../components/PriceCard";
 
 export default function Planos() {
