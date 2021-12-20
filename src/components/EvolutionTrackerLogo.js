@@ -1,4 +1,4 @@
-import logo from "../assets/Logo.png";
+import logo from "../assets/images/Logo.png";
 
 export default function EvolutionTrackerLogo() {
   return (

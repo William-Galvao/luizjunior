@@ -1,7 +1,10 @@
-import logo from "../assets/Logo.png";
+import logo from "../assets/images/Logo.png";
 import { Link } from "react-router-dom";
+import { useAuth } from "../hooks/useAuth";
 
 export default function Navbar() {
+  const { user } = useAuth;
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white">
       <div className="container-fluid">
@@ -37,7 +40,10 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/evolutiontrackerlogin">
+              <Link
+                className="nav-link"
+                to={!user ? "/evolutiontrackerlogin" : "/evolutiontracker"}
+              >
                 Evolution Tracker
               </Link>
             </li>

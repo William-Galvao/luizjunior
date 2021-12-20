@@ -1,4 +1,4 @@
-import routine from "../assets/routine.jpg";
+import routine from "../assets/images/routine.jpg";
 
 export default function Galeria() {
   return (

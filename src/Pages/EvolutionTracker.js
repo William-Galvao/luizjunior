@@ -1,8 +1,7 @@
-import { useContext } from "react";
-import { AuthContext } from "../components/App";
+import { useAuth } from "../hooks/useAuth";
 
 export default function EvolutionTracker() {
-  const { user } = useContext(AuthContext);
+  const { user } = useAuth;
 
   return <div>Bem vindo, {`${user?.name}`}!</div>;
 }
