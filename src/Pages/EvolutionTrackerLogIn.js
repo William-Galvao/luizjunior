@@ -3,16 +3,15 @@ import googleIcon from "../assets/google-icon.svg";
 import { useNavigate } from "react-router-dom";
 import EvolutionTrackerLogo from "../components/EvolutionTrackerLogo";
 import { useContext } from "react";
-import { AuthContext } from "../components/AuthContext";
+import { AuthContext } from "../components/App";
 
 export default function EvolutionTrackerLogIn() {
   const navigate = useNavigate();
-
   const { user, signInWithGoogle } = useContext(AuthContext);
 
-  function handleNavigateToEvo() {
+  async function handleNavigateToEvo() {
     if (!user) {
-      signInWithGoogle();
+      await signInWithGoogle();
     }
     navigate("/evolutiontracker");
   }
